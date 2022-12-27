@@ -1,0 +1,171 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>HepsiBuradaPanel </title>
+
+    <!-- Bootstrap -->
+    <link href="~/admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="~/admin/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="~/admin/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="~/admin/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="~/admin/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="~/admin/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href="~/admin/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="~/admin/build/css/custom.min.css" rel="stylesheet">
+</head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href=@Url.Action("Index","Admin") class="site_title"><i class="fa fa-paw"></i> <span>HepsiBurada</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="https://www.ideasoft.com.tr/wp-content/uploads/2022/05/Hepsiburada-Logo-Transparan.png" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Hoşgeldiniz,</span>
+                <h2>@ViewBag.Name</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Tüm İşlemler <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="@Url.Action("PcEkle","Admin")">Bilgisayar Ekle</a></li>
+                      <li><a href="@Url.Action("PcList","Admin")">Bilgisayar Listele</a></li>
+                       <li><a href="@Url.Action("OemEkle","Admin")">Oem Ekle</a></li>
+                      <li><a href="@Url.Action("OemList","Admin")">Oem Listele</a></li>
+                       <li><a href="@Url.Action("PhoneEkle","Admin")">Telefon Ekle</a></li>
+                      <li><a href="@Url.Action("PhoneList","Admin")">Telefon Listele</a></li>
+                       <li><a href="@Url.Action("AksEkle","Admin")">Aksesuar Ekle</a></li>
+                      <li><a href="@Url.Action("AksList","Admin")">Aksesuar Listele</a></li>
+                      
+                      
+                    </ul>
+                  </li>
+                </ul>
+                </div>
+                </div>
+               -
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="https://www.ideasoft.com.tr/wp-content/uploads/2022/05/Hepsiburada-Logo-Transparan.png" alt="">@ViewBag.Name
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href=""> Profil</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Ayarlar</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Yardım</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Çıkış</a></li>
+                  </ul>
+                </li>
+
+            
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+      @RenderBody()
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <script src="~/admin/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/admin/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="~/admin/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="~/admin/vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="~/admin/vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="~/admin/vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="~/admin/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="~/admin/vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="~/admin/vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="~/admin/vendors/Flot/jquery.flot.js"></script>
+    <script src="~/admin/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="~/admin/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="~/admin/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="~/admin/vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="~/admin/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="~/admin/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="~/admin/vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="~/admin/vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="~/admin/vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="~/admin/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="~/admin/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+
+    <script src="~/admin/vendors/moment/min/moment.min.js"></script>
+    <script src="~/admin/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    
+    <script src="~/admin/build/js/custom.min.js"></script>
+	
+  </body>
+</html>

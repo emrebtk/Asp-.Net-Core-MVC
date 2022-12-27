@@ -1,0 +1,45 @@
+﻿@model hepsiburada.Entity.phone
+@{
+    Layout = "~/views/shared/_LayoutAdmin.cshtml";
+}
+<div class="row">
+    <div class="col-md-12">@ViewBag.Durum</div>
+</div>
+@using(Html.BeginForm()){
+    <div class="row">
+        <div class="col-md-4">Telefon Markası</div>
+        <div class="col-md-8">
+             @Html.TextBoxFor(x=>x.marka,new {@class="form-control"})
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-md-4">Telefon Modeli</div>
+        <div class="col-md-8">
+            @Html.TextBoxFor(x=>x.model,new {@class="form-control"})
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-md-4">Telefon Özellikleri</div>
+        <div class="col-md-8">
+             @Html.TextBoxFor(x=>x.detail,new {@class="form-control"})
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-md-4">Satış Fiyatı</div>
+        <div class="col-md-8">
+           @Html.TextBoxFor(x=>x.price,new {@class="form-control"})
+        </div>
+    </div>
+       <div class="row">
+        <div class="col-md-4">Görsel Link</div>
+        <div class="col-md-8">
+             @Html.TextBoxFor(x=>x.link,new {@class="form-control"})
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <input type="submit" value="Düzenle" class="form-control" />
+        </div>
+    </div>
+}

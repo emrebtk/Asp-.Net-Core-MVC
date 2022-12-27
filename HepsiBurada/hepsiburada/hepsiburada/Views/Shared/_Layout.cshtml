@@ -1,0 +1,234 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<meta charset="utf-16">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>HepsiBurada</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="~/page/css/bootstrap.min.css" />
+
+	<!-- Slick -->
+	<link type="text/css" rel="stylesheet" href="~/page/css/slick.css" />
+	<link type="text/css" rel="stylesheet" href="~/page/css/slick-theme.css" />
+
+	<!-- nouislider -->
+	<link type="text/css" rel="stylesheet" href="~/page/css/nouislider.min.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="~/page/css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="~/page/css/style.css" />
+
+	
+	
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header>
+		<!-- top Header -->
+		<div id="top-header">
+			<div class="container">
+				
+			
+			</div>
+		</div>
+		<!-- /top Header -->
+
+		<!-- header -->
+		<div id="header">
+			<div class="container">
+				<div class="pull-left">
+					<!-- Logo -->
+					<div class="header-logo">
+						<a class="logo" href="#">
+							<img src="https://www.ideasoft.com.tr/wp-content/uploads/2022/05/Hepsiburada-Logo-Transparan.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="pull-right">
+					<ul class="header-btns">
+						<!-- Account -->
+						<li class="header-account dropdown default-dropdown">
+							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+								<div class="header-btns-icon">
+									<i class="fa fa-user-o"></i>
+								</div>
+								<strong class="text-uppercase">Hesabım <i class="fa fa-caret-down"></i></strong>
+							</div>
+							<a href="@Url.Action("Login","Users")" class="text-uppercase">Giriş</a> / <a href="@Url.Action("Index","Users")" class="text-uppercase">Kayıt</a>
+							<ul class="custom-menu">
+								<li><a href="#"><i class="fa fa-user-o"></i>Hesabım</a></li>
+								<li><a href="@Url.Action("Login","Users")"><i class="fa fa-user-o"></i>Giriş</a></li>
+								<li><a href="@Url.Action("Index","Users")"><i class="fa fa-user-o"></i>Kayıt</a></li>
+								
+							</ul>
+						</li>
+						<!-- /Account -->
+
+						<a  class="primary-btn" href="@Url.Action("Sepet","Home")">Sepete Git</a>
+					
+
+						<!-- Mobile nav toggle-->
+						<li class="nav-toggle">
+							<button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
+						</li>
+						<!-- / Mobile nav toggle -->
+					</ul>
+				</div>
+			</div>
+			<!-- header -->
+		</div>
+		<!-- container -->
+	</header>
+	<!-- /HEADER -->
+
+	<!-- NAVIGATION -->
+	<div id="navigation">
+		<!-- container -->
+		<div class="container">
+			<div id="responsive-nav">
+				<!-- category nav -->
+				<div class="category-nav show-on-click">
+					<span class="category-header">Kategoriler <i class="fa fa-list"></i></span>
+					<ul class="category-list">
+						<li><a href="@Url.Action("Bilgisayar","Home")">Bilgisayar</a></li>
+						<li><a href="@Url.Action("Oem","Home")">Oem</a></li>
+						<li><a href="@Url.Action("Phone","Home")">Telefon</a></li>
+						<li><a href="@Url.Action("Aks","Home")">Aksesuarlar</a></li>
+
+					</ul>
+				</div>
+				<!-- /category nav -->
+
+				<!-- menu nav -->
+				<div class="menu-nav">
+					<span class="menu-header">Menu <i class="fa fa-bars"></i></span>
+					<ul class="menu-list">
+						<li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+						<li><a href="@Url.Action("Bilgisayar","Home")">Bilgisayar</a></li>
+						<li><a href="@Url.Action("Oem","Home")">Oem</a></li>
+						<li><a href="@Url.Action("Phone","Home")">Telefon</a></li>
+						<li><a href="@Url.Action("Aks","Home")">Aksesuarlar</a></li>
+					
+					</ul>
+				</div>
+				<!-- menu nav -->
+			</div>
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /NAVIGATION -->
+
+	
+	<div id="breadcrumb">
+		<div class="container">
+			
+			@RenderBody()
+		</div>
+	</div>
+
+
+	
+
+	<!-- FOOTER -->
+	<footer id="footer" class="section section-grey">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- footer widget -->
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="footer">
+						<!-- footer logo -->
+						<div class="footer-logo">
+							<a class="logo" href="#">
+		            <img src="./img/logo.png" alt="">
+		          </a>
+						</div>
+						<!-- /footer logo -->
+
+					
+
+						<!-- footer social -->
+						<ul class="footer-social">
+							<li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+							
+						</ul>
+						<!-- /footer social -->
+					</div>
+				</div>
+				<!-- /footer widget -->
+
+				<!-- footer widget -->
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="footer">
+						<h3 class="footer-header">Hesabım</h3>
+						<ul class="list-links">
+							<li><a href="#">Hesabım</a></li>
+							<li><a href="@Url.Action("Login","Users")"><i class="fa fa-user-o"></i>Giriş</a></li>
+							<li><a href="@Url.Action("Index","Users")"><i class="fa fa-user-o"></i>Kayıt</a></li>
+
+						</ul>
+					</div>
+				</div>
+				<!-- /footer widget -->
+
+				<div class="clearfix visible-sm visible-xs"></div>
+
+				<!-- footer widget -->
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="footer">
+						<h3 class="footer-header">Biz Kimiz</h3>
+						<ul class="list-links">
+							<li><a href="#">Hakkımızda</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				
+			
+				</div>
+				<!-- /footer subscribe -->
+			</div>
+			<!-- /row -->
+			<hr>
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						
+				<script>document.write(new Date().getFullYear());</script> Tüm hakları Saklıdır <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Emre Bitik</a>
+					
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	
+	</footer>
+
+	<script src="~/page/js/jquery.min.js"></script>
+	<script src="~/page/js/bootstrap.min.js"></script>
+	<script src="~/page/js/slick.min.js"></script>
+	<script src="~/page/js/nouislider.min.js"></script>
+	<script src="~/page/js/jquery.zoom.min.js"></script>
+	<script src="~/page/js/main.js"></script>
+
+</body>
+
+</html>

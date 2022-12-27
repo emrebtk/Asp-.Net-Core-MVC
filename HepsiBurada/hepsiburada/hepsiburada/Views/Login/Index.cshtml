@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "~/views/shared/_Layout.cshtml";
+}
+@using(Html.BeginForm()){
+	<div class="row">
+	Kullanıcı adı giriniz : <input type="text" name="Name" class="form-control"/>
+	</div>
+
+		<div class="row">
+	Şifre :  <input type="password" name="pass" class="form-control"/>
+	</div>
+	<div class="row">
+		<button type="submit" class="btn btn-success form-control">Giriş</button>
+	</div>
+}

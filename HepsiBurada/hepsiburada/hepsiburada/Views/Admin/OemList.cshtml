@@ -1,0 +1,44 @@
+﻿@model List<hepsiburada.Entity.oem>
+
+@{
+    Layout = "~/views/shared/_LayoutAdmin.cshtml";
+}
+
+@if (TempData["Durum"] != null)
+        {
+            <div class="row alert bg-warning">
+                <div class="col-md-12">
+                    <span>@TempData["Durum"].ToString()</span>
+                </div>
+            </div>
+            
+        }
+
+<table class="table">
+    <tr>
+        <td>ID</td>
+        <td>Oem Markası</td>
+        <td>Oem Modeli</td>
+        <td>Oem Özellikleri</td>
+        <td>Oem Görsel</td>
+        <td>Oem Fiyatı</td>
+
+
+        <td>İşlemler</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+         <tr>
+            <td>@item.id</td>
+            <td>@item.marka</td>
+            <td>@item.model</td>
+            <td>@item.detail</td>
+            <td>@item.link</td>
+            <td>@item.price</td>
+            <td>
+                <a href="@Url.Action("OemDuzenle","Admin", new {id = item.id})" class="btn btn-warning">Düzenle</a>
+                <a href="@Url.Action("OemSil","Admin", new {id = item.id})" class="btn btn-danger">Sil</a>
+            </td>
+        </tr>
+    }
+</table>

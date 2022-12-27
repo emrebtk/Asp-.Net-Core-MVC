@@ -1,0 +1,41 @@
+﻿@model hepsiburada.Entity.User
+@{
+    Layout="~/views/shared/_Layout.cshtml";
+}
+@using(Html.BeginForm()){
+    <div class="row">
+        <div class="col-md-4">İsim-Soyisim:</div>
+        <div class="col-md-4">
+             @Html.TextBoxFor(x=>x.Name,new {@class="form-control"})
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-md-4">Telefon:</div>
+        <div class="col-md-4">
+            @Html.TextBoxFor(x=>x.No,new {@class="form-control"})
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-md-4">Mail:</div>
+        <div class="col-md-6">
+             @Html.TextBoxFor(x=>x.Mail,new {@class="form-control"})
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-md-4">Adres:</div>
+        <div class="col-md-8">
+            @Html.TextBoxFor(x=>x.Adress,new {@class="form-control"})
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">Şifre:</div>
+        <div class="col-md-4"> @Html.PasswordFor(x=>x.Pass,new {@class="form-control"})</div>
+	</div>
+       
+
+    <div class="row">
+        <div class="col-md-12">
+            <input type="submit" value="Kayıt ol" class="form-control" />
+        </div>
+    </div>
+}

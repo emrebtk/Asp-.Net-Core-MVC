@@ -1,0 +1,44 @@
+﻿@model List<hepsiburada.Entity.pc>
+
+@{
+    Layout = "~/views/shared/_LayoutAdmin.cshtml";
+}
+
+@if (TempData["Durum"] != null)
+        {
+            <div class="row alert bg-warning">
+                <div class="col-md-12">
+                    <span>@TempData["Durum"].ToString()</span>
+                </div>
+            </div>
+            
+        }
+
+<table class="table">
+    <tr>
+        <td>ID</td>
+        <td>Bilgisayar Markası</td>
+        <td>Bilgisayar Modeli</td>
+        <td>Bilgisayar Özellikleri</td>
+        <td>Bilgisayar Görsel</td>
+        <td>Bilgisayar Fiyatı</td>
+
+
+        <td>İşlemler</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+         <tr>
+            <td>@item.id</td>
+            <td>@item.marka</td>
+            <td>@item.model</td>
+            <td>@item.detail</td>
+            <td>@item.link</td>
+            <td>@item.price</td>
+            <td>
+                <a href="@Url.Action("PcDuzenle","Admin", new {id = item.id})" class="btn btn-warning">Düzenle</a>
+                <a href="@Url.Action("PcSil","Admin", new {id = item.id})" class="btn btn-danger">Sil</a>
+            </td>
+        </tr>
+    }
+</table>

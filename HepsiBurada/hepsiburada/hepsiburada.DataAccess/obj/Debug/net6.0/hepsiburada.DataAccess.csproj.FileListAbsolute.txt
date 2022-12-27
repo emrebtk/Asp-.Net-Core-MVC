@@ -1,0 +1,17 @@
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\bin\Debug\net6.0\hepsiburada.DataAccess.deps.json
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\bin\Debug\net6.0\hepsiburada.DataAccess.runtimeconfig.json
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\bin\Debug\net6.0\hepsiburada.DataAccess.dll
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\bin\Debug\net6.0\hepsiburada.DataAccess.pdb
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\bin\Debug\net6.0\hepsiburada.Entity.dll
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\bin\Debug\net6.0\hepsiburada.Entity.pdb
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\obj\Debug\net6.0\hepsiburada.DataAccess.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\obj\Debug\net6.0\hepsiburada.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\obj\Debug\net6.0\hepsiburada.DataAccess.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\obj\Debug\net6.0\hepsiburada.DataAccess.AssemblyInfo.cs
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\obj\Debug\net6.0\hepsiburada.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\obj\Debug\net6.0\hepsiburada.DataAccess.csproj.CopyComplete
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\obj\Debug\net6.0\hepsiburada.DataAccess.dll
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\obj\Debug\net6.0\refint\hepsiburada.DataAccess.dll
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\obj\Debug\net6.0\hepsiburada.DataAccess.pdb
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\obj\Debug\net6.0\hepsiburada.DataAccess.genruntimeconfig.cache
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.DataAccess\obj\Debug\net6.0\ref\hepsiburada.DataAccess.dll

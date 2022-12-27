@@ -1,0 +1,14 @@
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\bin\Debug\net6.0\hepsiburada.Entity.deps.json
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\bin\Debug\net6.0\hepsiburada.Entity.runtimeconfig.json
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\bin\Debug\net6.0\hepsiburada.Entity.dll
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\bin\Debug\net6.0\hepsiburada.Entity.pdb
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\obj\Debug\net6.0\hepsiburada.Entity.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\obj\Debug\net6.0\hepsiburada.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\obj\Debug\net6.0\hepsiburada.Entity.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\obj\Debug\net6.0\hepsiburada.Entity.AssemblyInfo.cs
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\obj\Debug\net6.0\hepsiburada.Entity.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\obj\Debug\net6.0\hepsiburada.Entity.dll
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\obj\Debug\net6.0\refint\hepsiburada.Entity.dll
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\obj\Debug\net6.0\hepsiburada.Entity.pdb
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\obj\Debug\net6.0\hepsiburada.Entity.genruntimeconfig.cache
+C:\Users\HP\Desktop\Staj\hepsiburada\hepsiburada.Entity\obj\Debug\net6.0\ref\hepsiburada.Entity.dll
