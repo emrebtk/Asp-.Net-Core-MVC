@@ -1,0 +1,33 @@
+﻿@model List<Tekrar4.Models.ORM.Entity.Kategori>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (TempData["Durum"] != null)
+        {
+            <div class="row alert bg-warning">
+                <div class="col-md-12">
+                    <span>@TempData["Durum"].ToString()</span>
+                </div>
+            </div>
+            
+        }
+
+<table class="table">
+    <tr>
+        <td>ID</td>
+        <td>Kategori Adı</td>
+        <td>İşlemler</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+         <tr>
+            <td>@item.ID</td>
+            <td>@item.KategoriAdi</td>
+            <td>
+                <a href="@Url.Action("KategoriDuzenle","Home", new {id = item.ID})" class="btn btn-warning">Düzenle</a>
+                <a href="@Url.Action("KategoriSil","Home", new {id = item.ID})" class="btn btn-danger">Sil</a>
+            </td>
+        </tr>
+    }
+</table>

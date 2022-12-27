@@ -1,0 +1,18 @@
+﻿@model Tekrar4.Models.ORM.Entity.Kategori
+
+<div class="row">
+    <div class="col-md-12">@ViewBag.Durum</div>
+</div>
+@using(Html.BeginForm()){
+    <div class="row">
+        <div class="col-md-4">Kategori Adı</div>
+        <div class="col-md-8">
+            @Html.TextBoxFor(x=>x.KategoriAdi,new {@class="form-control"})
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <input type="submit" value="Düzenle" class="form-control" />
+        </div>
+    </div>
+}
