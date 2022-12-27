@@ -1,0 +1,47 @@
+﻿@model List<Kurumsal1.Models.ORM.Entity.Blog>
+<div class="breadcrumb-area">
+        <div class="container h-100">
+            <div class="row h-100 align-items-end">
+                <div class="col-12">
+                    <div class="breadcumb--con">
+                        <h2 class="title">Bloglar</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Anasayfa</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Bloglar</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Curve -->
+        <div class="breadcrumb-bg-curve">
+            <img src="~/UI/img/core-img/curve-5.png" alt="">
+        </div>
+    </div>
+
+    <div class="uza-blog-area section-padding-80">
+        <div class="container">
+            <div class="row">
+                <!-- Single Blog Post -->
+               @foreach (var item in Model)
+            {
+                 <div class="col-12 col-lg-4">
+                    <div class="single-blog-post bg-img mb-80" style="background-image: url(@item.Resim);">
+                        <!-- Post Content -->
+                        <div class="post-content">
+                            <span class="post-date"><span>@item.Tarih.Day</span> @item.Tarih.ToString("MMMM"), @item.Tarih.Year</span><span>Okunma : @item.OkunmaSayisi</span>
+                            <a href="#" class="post-title">@item.Baslik</a>
+                            <p>@item.Icerik.Substring(0,15)<span>...</span></p>
+                            <a href="@Url.Action("BlogDetay","Home", new {id = item.ID})" class="read-more-btn">OKU <i class="arrow_carrot-2right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            }
+            </div>
+            
+        </div>
+    </div>

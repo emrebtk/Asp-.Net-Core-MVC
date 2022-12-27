@@ -1,0 +1,29 @@
+﻿@model Kurumsal1.Models.ORM.Entity.Ayarlar
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@if (ViewBag.Durum != null)
+{
+    if (ViewBag.Durum == "1")
+    {
+        <div class="row">
+            <span style="background-color: #3db527;color:white;padding:10px;border-radius: 10px;width: 100%;float: left;margin-bottom: 10px;text-align: center;font-size: 18px;">Hakkımızda Güncellendi</span>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+                <span style="background-color: red;color:white;padding:10px;border-radius: 10px;width: 100%;float: left;margin-bottom: 10px;text-align: center;font-size: 18px;">Bir Hata Oluştu</span>
+        </div>
+    }
+
+}
+@using(Html.BeginForm()){
+    <div class="row">
+        <div class="col-md-2">Hakkımızda</div>
+        <div class="col-md-10">@Html.TextAreaFor(x=>x.Hakkimizda, new{@class="form-control",@rows="8"})</div>
+    </div>
+    <div class="row">
+        <div class="col-md-12"><input type="submit" value="Kaydet" class="btn btn-success" /></div>
+    </div>
+}

@@ -1,0 +1,30 @@
+﻿@model Kurumsal1.Models.ORM.Entity.Blog
+
+<section class="blog-details-area section-padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="blog-details-content">
+                        <!-- Post Details Text -->
+                        <div class="post-details-text">
+
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-10">
+                                    <div class="post-content text-center mb-50">
+                                        <a href="#" class="post-date"><span>@Model.Tarih.Day</span> @Model.Tarih.ToString("MMMM"), @Model.Tarih.Year</a>
+                                        <h2>@Model.Baslik</h2>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <img class="mb-50" src="@Model.Resim" alt="">
+                                </div>
+                                <div class="col-12 col-lg-10">
+                                    <p>@Model.Icerik</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
